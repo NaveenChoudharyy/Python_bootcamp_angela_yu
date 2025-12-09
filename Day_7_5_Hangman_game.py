@@ -17,7 +17,8 @@ Type "quit" to exit the game.
 
 import random
 
-animals = ['Tiger', "Elephant", "Horse"]
+
+animals = ['Tiger', "Elephant", "Horse", "Moose"]
 
 chosen_word = random.choice(animals).lower()
 word_to_guess_list = ["_"]*len(chosen_word)
