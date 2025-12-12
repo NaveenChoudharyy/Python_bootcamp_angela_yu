@@ -113,5 +113,3 @@ while start_new_calc:
     else:
         print("Invalid input. You can only enter numbers with single '.' and single '-'.")
         start_new_calc = True
-
-
