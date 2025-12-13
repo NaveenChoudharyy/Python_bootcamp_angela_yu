@@ -1,4 +1,5 @@
 # Code for a working calculator
+# I have used recursion (def inside same def)
 
 calc_logo = """
 
@@ -21,7 +22,7 @@ calc_logo = """
 """
 
 
-print(calc_logo)
+
 
 def add(num_1, num_2):
     return num_1 + num_2
@@ -80,7 +81,7 @@ def first_calc():
 
     else:
         n3 += operations[oper](n1, n2)
-        print(n3)
+        print(f"{n1} {oper} {n2} = {n3}")
         return n3
 
 def next_calc(previous_result):
@@ -93,11 +94,12 @@ def next_calc(previous_result):
         return None
 
     n3 += operations[oper_next](previous_result, n2_next)
-    print(n3)
+    print(f"{previous_result} {oper_next} {n2_next} = {n3}")
     return n3
 
 
 def calculator():
+    print(calc_logo)
     prev_result = first_calc()
     while True:
 
@@ -107,11 +109,12 @@ def calculator():
             continue
 
         cont_or_not = input(
-            "\n Do you want to continue? 'y' for yes or 'n' for new calculation and any other key to quit.\n").lower()
+            f"\n Type 'y' to continue with previous answer '{prev_result}' or 'n' for new calculation and any other key to quit.\n").lower()
         if cont_or_not.lower() == "y":
             prev_result = next_calc(prev_result)
         elif cont_or_not.lower() == "n":
-            prev_result = first_calc()
+            print("\nResetting calculator.\n")
+            calculator() # Recursion
         else:
             print("Thank you for visiting.")
             break

@@ -1,5 +1,5 @@
 # Working calculator
 
-from Day_10_3 import calculator
+from Day_10_3_calculator_code import calculator
 
 calculator()
