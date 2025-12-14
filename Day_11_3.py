@@ -83,10 +83,7 @@ def second_game():
     return player_input
 
 
-if player_input == "hit":
-    card_start(deck_cards)
-elif player_input == "stand":
-    is sum(player) > sum(dealer)
+
 
 
 
