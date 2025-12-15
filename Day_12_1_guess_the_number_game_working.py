@@ -1,0 +1,3 @@
+from Day_12_1_guess_the_number_game import guess_the_number_game
+
+guess_the_number_game()
