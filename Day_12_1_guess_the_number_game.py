@@ -26,9 +26,10 @@ def select_level():
 
     if easy_or_hard == "easy":
         attempts += 10
+        print(f"You got {attempts} attempts.")
     elif easy_or_hard == "hard":
         attempts += 5
-
+        print(f"You got {attempts} attempts.")
     return easy_or_hard, attempts
 
 #____________________________________________________________________________________________________
