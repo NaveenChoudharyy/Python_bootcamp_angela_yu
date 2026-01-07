@@ -30,3 +30,20 @@ resources = {
     "coffee": 100,
 }
 
+
+
+inventory= {
+    "water": 2000,
+    "milk": 1000,
+    "coffee": 200
+}
+
+
+
+
+coins= {
+    "quarter": 0.25,
+    "dime": 0.1,
+    "nickel": 0.05,
+    "penny": 0.01
+}
